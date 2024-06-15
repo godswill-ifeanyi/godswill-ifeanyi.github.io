@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gooddesign</title>
+    <link rel="stylesheet" href="css/hireme.css">
+
+    <script src="https://kit.fontawesome.com/619523f6f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/GDlogo.JPG" alt="Logo Image" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="hireme.html" class="anchor">Hire Me</a></li>
+                </ul>
+            </nav>
+            <img src="img/NavIcon.JPG" alt="Navigation Bar" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <marquee behavior="" direction="">The Future Starts Here!</marquee>
+
+        <h2 style="margin-top: 30px;">Comments</h2>
+
+        <form action="https://formsubmit.co/godswill_ifeanyi@yahoo.com" method="post">
+        <input type="text" name="Name" placeholder="Name" required><br>
+        <input type="email" name="Email" placeholder="@email.com" required><br>
+        <input type="text" name="Phone Number" placeholder="Phone no." required><br>
+        <textarea name="Message" cols="40" rows="10" placeholder="Type your text here..." required></textarea><br>
+        <button type="submit">Submit</button>
+        </form>
+
+        <h2 style="margin-top: 40px;">Get In Touch! <span style="font-size:12px; font-weight: loghter;" >(see below)</span ></h2>
+
+        <div class="box2"><i class="fa-solid fa-location-dot"></i> 
+            65 Umuoba Road, Ogbor-Hill, AbaCity, Nigeria</div>
+        <div class="box2"><i class="fa-solid fa-phone"></i> 
+            Call: +234 8116042291, +234 9027647788</div>
+        <div class="box2"><i class="fa-solid fa-envelope"></i>
+            Email to: <a style="text-decoration: none;" href="https://godswill_ifeanyi@yahoo.com" target="_blank">godswill_ifeanyi@yahoo.com</a></div>
+        <div class="box2"><i class="fa-brands fa-facebook"></i>
+            Facebook Page: <a href="https://facebook.com/gooddesign247" target="_blank"> HERE </a></div>
+        <div class="box2"><i class="fa-brands fa-whatsapp"></i>
+            WhatsApp: <a href="https://wa.me/qr/5N7CE5HYIATDH1" target="_blank"> HERE </a></div>
+
+    </div>
+
+<center style="margin: 20px 0 20px 0;">
+        <a href="https://facebook.com/gooddesign247" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+        <a style="margin: 30px" href="https://godswill_ifeanyi@yahoo.com" target="_blank"> <i class="fa-solid fa-envelope"></i> </a>
+        <a href="https://wa.me/qr/5N7CE5HYIATDH1" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
+    </center>
+
+  <div style="height: 60px; background: rgb(75, 74, 74); color: white; font-weight: lighter; margin-bottom: 10px">
+      <a class="anchor 6" href="index.html">HOME</a>
+      <a class="anchor 6" href="about.html">ABOUT</a>
+      <a class="anchor 6" href="projects.html">PROJECTS</a>
+      <a class="anchor 6" href="hireme.html">HIRE ME</a><br>
+      Copyright 2022 &copy; gooddesign
+</div>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+           
+        }
+    </script>
+</body>
+</html>

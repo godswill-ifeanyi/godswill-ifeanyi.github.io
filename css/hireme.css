@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: green;
+    font-size: 14px;
+}
+nav ul li a:hover {
+    color: black;
+}
+.anchor {
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    background-color: green;
+    width: 80px;
+    height: 20px;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+}
+.anchor6 {
+  color: white; 
+  font-weight: lighter; 
+  text-decoration: none; 
+  font-size: 12px;
+  }
+.container2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.container2::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.box {
+    width: 20%;
+    height: 500px;
+    margin: 40px;
+    float: left;
+}
+.box > img {
+    width: 250px;
+    height: 250px;
+    
+}
+.box2 {
+    margin: 50px;
+}
+input {
+    margin: 10px 0 20px 0;
+    border: 1px solid black;
+    height: 30px;
+    width: 300px;
+}
+textarea {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+button {
+background: green;
+color: white;
+border: 0;
+padding: 10px;
+border-radius: 10px;
+cursor: pointer;
+}
+button:hover {
+    color: black;
+}
+@media only screen and (max-width:700px) {
+    .container{
+        min-height: 500px;
+    }
+    nav ul {
+        width: 100%;
+        background: linear-gradient(#2ad680, #178d48);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .anchor {
+        padding: 5px;
+    }
+    input {
+        width: 200px;
+    }
+    textarea {
+       width: 200px;
+    }
+    .box2 {
+        font-size: 14px;
+    }
+    marquee {
+        font-size: 12px;
+    }
+   
+}
